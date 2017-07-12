@@ -25,7 +25,6 @@ ext {
   gsonVersion = '2.3'
   okHttpVersion = '2.5.0'
   androidAnnotationsVersion = '25.4.0'
-  arrowVersion = '1.0.0'
 
   //Testing
   robolectricVersion = '3.1.1'
@@ -44,6 +43,7 @@ ext {
       dagger:             "com.google.dagger:dagger:${daggerVersion}",
       butterKnife:        "com.jakewharton:butterknife:${butterKnifeVersion}",
       butterKnifeCompiler:"com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+      recyclerView:       "com.android.support:recyclerview-v7:${recyclerViewVersion}",
       rxJava:             "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
       rxAndroid:          "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
       javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}"

@@ -3,6 +3,8 @@ package ee.larseckart.cvee.presentation.internal.di.modules;
 import android.content.Context;
 import dagger.Module;
 import dagger.Provides;
+import ee.larseckart.cvee.data.repository.JobAdDataRepository;
+import ee.larseckart.cvee.domain.repository.JobAdRepository;
 import ee.larseckart.cvee.presentation.AndroidApplication;
 import ee.larseckart.cvee.data.executor.JobExecutor;
 import ee.larseckart.cvee.domain.executor.PostExecutionThread;
@@ -30,6 +32,8 @@ public class ApplicationModule {
     return uiThread;
   }
 
-
+  @Provides @Singleton JobAdRepository provideJobAdRepository(JobAdDataRepository userDataRepository) {
+    return userDataRepository;
+  }
 }
 

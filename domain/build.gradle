@@ -19,13 +19,13 @@ dependencies {
   def domainDependencies = rootProject.ext.domainDependencies
   def domainTestDependencies = rootProject.ext.domainTestDependencies
 
-  provided domainDependencies.javaxAnnotation
+  compileOnly domainDependencies.javaxAnnotation
 
-  compile domainDependencies.javaxInject
-  compile domainDependencies.rxJava
+  implementation domainDependencies.javaxInject
+  implementation domainDependencies.rxJava
+  //implementation 'io.reactivex.rxjava2:rxjava:2.0.2'
 
-  testCompile domainTestDependencies.junit
-  testCompile domainTestDependencies.mockito
-  testCompile domainTestDependencies.assertj
-  compile 'io.reactivex.rxjava2:rxjava:2.0.2'
+  testImplementation domainTestDependencies.junit
+  testImplementation domainTestDependencies.mockito
+  testImplementation domainTestDependencies.assertj
 }

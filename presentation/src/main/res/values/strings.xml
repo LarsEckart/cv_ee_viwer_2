@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">cv.ee Viewer</string>
-  <string name="url">http://www.android10.org/</string>
 
+  <string name="activity_title_main">cv.ee viewer</string>
   <string name="activity_title_user_list">Users List</string>
   <string name="activity_title_user_details">User Details</string>
 
-  <string name="btn_text_load_data">Load Sample Data</string>
+  <string name="btn_text_load_data">Load Job Ads</string>
   <string name="btn_text_retry">Retry</string>
 
   <string name="view_text_email">Email:</string>

@@ -4,6 +4,7 @@ import android.content.Context;
 import dagger.Component;
 import ee.larseckart.cvee.domain.executor.PostExecutionThread;
 import ee.larseckart.cvee.domain.executor.ThreadExecutor;
+import ee.larseckart.cvee.domain.repository.JobAdRepository;
 import ee.larseckart.cvee.presentation.internal.di.modules.ApplicationModule;
 import ee.larseckart.cvee.presentation.view.activity.BaseActivity;
 import javax.inject.Singleton;
@@ -17,4 +18,5 @@ public interface ApplicationComponent {
   Context context();
   ThreadExecutor threadExecutor();
   PostExecutionThread postExecutionThread();
+  JobAdRepository jobAdRepository();
 }
